@@ -2,18 +2,17 @@ package loop.pattern_printing;
 
 import java.util.Scanner;
 
-public class traingle_oattern2 {
+public class floydsTraingle {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        System.out.println("enter the number");
+        System.out.println("Enter the number");
         int n=sc.nextInt();
-
-        for(int i=1;i<=n;i++){
-            for(int j=n;j>=i;j--){
-                System.out.print("* ");
+        int x=1;
+        for (int i=1;i<=n;i++){
+            for (int j=1;j<=i;j++){
+                System.out.print(x+++"  ");
             }
             System.out.println();
         }
-
     }
 }
