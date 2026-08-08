@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9bdc7849-d6e6-4564-9231-5d3226721864" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Loops/EvenNum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loops/OddDivBy3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loops/PrintNumbers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loops/PrintNumeInDecreasingOrdr.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loops/geometricProgression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loops/positiveNumSeries.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loops/primeNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loops/printAlphabetWithAsci.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loops/printArithmeticProgression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loops/printSeq1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loops/table.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Dhruv066"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Dhruv066/DSA_java.git",
+    "accountId": "cf2e6063-abf0-45b1-8b21-8f149540acbd"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="3Fg36M2BGG4T0L86SyGBK3L6FCK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.countDigit.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="countDigit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="loop.countDigit" />
+      <module name="loop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="loop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.countDigit" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9bdc7849-d6e6-4564-9231-5d3226721864" name="Changes" comment="" />
+      <created>1782482709692</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1782482709692</updated>
+    </task>
+    <servers />
+  </component>
+</project>
