@@ -1,7 +1,13 @@
 package oops;
 
 abstract class shape{
+    shape(){
+        System.out.println("shape is created");
+    }
     public abstract double area();
+    void draw(){
+        System.out.println("shape is drawn.");
+    }
 }
 class circle  extends shape{
     double radius;
