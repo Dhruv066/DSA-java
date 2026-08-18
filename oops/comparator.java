@@ -13,17 +13,17 @@ class Std {
     }
 }
 
-class MyCustomComparator implements Comparator<Std>{
-    // decreasing
-    @Override
-    public int compare(Std s1, Std s2){
-        if(s1.marks < s2.marks){
-            return 1;
-        }else{
-            return -1;
-        }
-    }
-}
+//class MyCustomComparator implements Comparator<Std>{
+//    // decreasing
+//    @Override
+//    public int compare(Std s1, Std s2){
+//        if(s1.marks < s2.marks){
+//            return 1;
+//        }else{
+//            return -1;
+//        }
+//    }
+//}
 
 
 public class comparator {
@@ -33,7 +33,17 @@ public class comparator {
             list.add(new Std(1, "Ravi",70));
             list.add(new Std(2, "Neha",80));
 
-            Collections.sort(list, new MyCustomComparator());
+//            Collections.sort(list, new MyCustomComparator());
+            Collections.sort(list, new Comparator<Std>() {
+                @Override
+                public int compare(Std s1, Std s2){
+                    if(s1.marks < s2.marks){
+                        return 1;
+                    }else{
+                        return -1;
+                    }
+                }
+            });
 
         for (Std s : list) {
             System.out.println(s.marks + " " + s.name);
