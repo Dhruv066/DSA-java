@@ -4,6 +4,7 @@ class Engine{
     void run(){
         System.out.println("engine is running.. ");
 
+
     }
 }
 class Truck{
@@ -11,6 +12,7 @@ class Truck{
     Truck(){
         engine = new Engine();
     }
+
     void start(){
         System.out.println("truck is starting. ");
     }
