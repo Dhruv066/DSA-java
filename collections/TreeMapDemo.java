@@ -23,14 +23,14 @@ public class TreeMapDemo {
         for(Map.Entry<Integer,String> entry : map.entrySet()){
             System.out.println(entry.getKey() + " -> " + entry.getValue());
         }
-//        System.out.println("Print using keys");
-//        for(Integer key : map.keySet()){
-//            System.out.println(key + " -> " + map.get(key));
-//        }
-//
-//        System.out.println("Print using values");
-//        for(String name : map.values()){
-//            System.out.println(name);
-//        }
+        System.out.println("Print using keys");
+        for(Integer key : map.keySet()){
+            System.out.println(key + " -> " + map.get(key));
+        }
+
+        System.out.println("Print using values");
+        for(String name : map.values()){
+            System.out.println(name);
+        }
     }
 }
