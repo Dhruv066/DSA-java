@@ -28,14 +28,33 @@ public class DigitManupulation {
         }
         return res;
     }
+    static int reverseNum(int num) {
+        boolean isNegative=false;
+        if (num<0) {
+             num=-1*num;
+             isNegative=true;
+         }
+        int res=0;
+        while(num>0){
+            int d=num%10;
+            res= res*10+d;
+            num=num/10;
+
+        }
+    if (isNegative){
+        return -1*res;
+    }
+        return res;
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number :");
         int num = sc.nextInt();
-        System.out.println("Enter the digit which you want to add :");
-        int digit = sc.nextInt();
+//        System.out.println("Enter the digit which you want to add :");
+//        int digit = sc.nextInt();
 //        System.out.println(addDigits(num,digit));
-        System.out.println(addDigitsAtfront(num,digit));
+//        System.out.println(addDigitsAtfront(num,digit));
+        System.out.println("Your reversed number is "+reverseNum(num));
     }
 
 }
