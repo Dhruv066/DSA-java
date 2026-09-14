@@ -20,7 +20,7 @@ public class gcd {
         }
         return res;
     }
-    private static int findGcdWithEuclideanAlgorithm(int a, int b){
+    public  static int findGcdWithEuclideanAlgorithm(int a, int b){
         a = Math.abs(a);
         b = Math.abs(b);
         if (b>a){
