@@ -20,12 +20,25 @@ public class gcd {
         }
         return res;
     }
+    private static int findGcdWithEuclideanAlgorithm(int a, int b){
+        a = Math.abs(a);
+        b = Math.abs(b);
+        if (b>a){
+            return findGcd(a,b);
+        }
+        while(b>0){
+            int temp=a%b;
+            a=b;
+            b=temp;
+        }return a;
+    }
 
     static void main() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter 2 number: ");
         int a = sc.nextInt();
         int b = sc.nextInt();
-        System.out.println(findGcd(a, b));
+//        System.out.println(findGcd(a, b));
+        System.out.println(findGcd(a,b));
     }
 }
