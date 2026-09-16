@@ -1,5 +1,7 @@
 package search;
 
+import java.util.Arrays;
+
 public class Search {
     static int LinearSearch(int[] arr,int key){
         for(int i = 0; i < arr.length; i++){
@@ -9,6 +11,18 @@ public class Search {
 
         }
         return -1;
+    }
+    static int[] LinearMultipleSearch(int[] arr,int key){
+        int[] elm = new int[arr.length];
+        Arrays.fill(elm,-1);
+        int k=0;
+        for(int i = 0; i < arr.length; i++){
+            if(arr[i] == key){
+                elm[k] = i;
+                k++;
+            }
+        }
+        return elm;
     }
     static int BinarySearch(int[] arr,int key){
         int low = 0;
@@ -29,7 +43,7 @@ public class Search {
     }
 
     static void main() {
-        int[] arr ={1,2,3,4,5,6,7,8,9,10};
+        int[] arr ={1,6,3,4,5,6,7,8,6,10};
         System.out.println("Linear Search ");
         int status= LinearSearch(arr,6);
         if(status==-1){
@@ -44,6 +58,15 @@ public class Search {
         }else  {
             System.out.println("Element found at index "+status1+" in array");
         }
+        System.out.println("Multiply Search ");
+        int[] mls =LinearMultipleSearch(arr,6);
+        System.out.print("Element found at index : ");
+        for (int i=0;i<mls.length;i++){
+            if(mls[i]!=-1){
+                System.out.print(mls[i]+" ");
+            }
+        }
+
 
     }
 
