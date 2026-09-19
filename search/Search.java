@@ -61,9 +61,40 @@ public class Search {
         }
         return min;
     }
-
+    static void findLinearSearch2D(int[][] arr,int key,boolean findLast){
+        int outerIndex = -1;
+        int innerIndex = -1;
+        for(int i = 0; i < arr.length; i++){
+            boolean found = false;
+            for(int j = 0; j < arr[i].length; j++){
+                if(arr[i][j] == key){
+                    outerIndex = i;
+                    innerIndex = j;
+                    if(!findLast){
+                        found = true;
+                        break;
+                    }
+                }
+            }
+            if(found){
+                break;
+            }
+        }
+        if(outerIndex == -1){
+            System.out.println("Element is not found.");
+        }else{
+            System.out.println("Element is found at index: "+outerIndex +','+innerIndex);
+        }
+    }
     static void main() {
         int[] arr ={1,6,3,4,5,6,7,8,6,10};
+        int[][] arr1={
+                {1,6,4,7,6},
+                {64,65,85,96,58},
+                {46,36,85,63,79},
+                {25,83,91,68,56}
+
+        };
         System.out.println("Linear Search ");
         int status= LinearSearch(arr,6);
         if(status==-1){
@@ -89,6 +120,7 @@ public class Search {
         System.out.println();
         System.out.println("Maximum element of the array is: "+findmax(arr));
         System.out.println("Minimum element of the array is: "+findmin(arr));
+        findLinearSearch2D(arr1,96,true);
 
 
     }
