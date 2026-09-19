@@ -41,6 +41,16 @@ public class Search {
         return -1;
 
     }
+    static int findmax(int[] arr){
+        int max = Integer.MIN_VALUE;
+        int high = arr.length-1;
+        for(int i = 0; i < arr.length; i++){
+            if(arr[i] > max){
+                max = arr[i];
+            }
+        }
+        return max;
+    }
 
     static void main() {
         int[] arr ={1,6,3,4,5,6,7,8,6,10};
@@ -66,6 +76,8 @@ public class Search {
                 System.out.print(mls[i]+" ");
             }
         }
+        System.out.println();
+        System.out.println("Maximum element of the array is: "+findmax(arr));
 
 
     }
